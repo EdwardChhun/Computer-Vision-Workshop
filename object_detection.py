@@ -19,20 +19,12 @@ def getColours(cls_num):
     else:
         return (255, 255, 255)  # White for any other class
 
-def ifRock():
-    pass
-
-def ifPaper():
-    pass
-
-def ifScissors():
-    pass
-
 while True:
     ret, frame = videoCap.read()
     if not ret:
         continue
-    results = yolo.track(frame, stream=True)
+    # https://docs.ultralytics.com/modes/predict/
+    results = yolo.predict(frame, iou=0.3)
 
 
     for result in results:

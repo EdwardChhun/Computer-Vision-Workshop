@@ -2,10 +2,10 @@ task: detect
 mode: train
 model: yolo11n.pt
 data: D:\Developer\Computer-Vision-Workshop\rock-paper-scissors.v14i.yolov11\data.yaml
-epochs: 20
+epochs: 10
 time: null
 patience: 100
-batch: 8
+batch: 16
 imgsz: 640
 save: true
 save_period: -1
@@ -13,7 +13,7 @@ cache: false
 device: cpu
 workers: 8
 project: D:\Developer\Computer-Vision-Workshop
-name: rps_prediction
+name: rps_prediction3
 exist_ok: false
 pretrained: true
 optimizer: auto
@@ -104,4 +104,4 @@ erasing: 0.4
 crop_fraction: 1.0
 cfg: null
 tracker: botsort.yaml
-save_dir: D:\Developer\Computer-Vision-Workshop\rps_prediction
+save_dir: D:\Developer\Computer-Vision-Workshop\rps_prediction3
