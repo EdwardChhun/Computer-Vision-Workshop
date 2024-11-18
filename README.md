@@ -9,3 +9,12 @@ Another repo example https://github.com/EdwardChhun/soccer-prediction
 3. [Roboflow Models](https://roboflow.com/models?type=Object+Detection) 
 4. [Ultralytics Hub](https://hub.ultralytics.com/home) - Training your YOLO Models
 5. [Results Object](https://docs.ultralytics.com/reference/engine/results/#ultralytics.engine.results.BaseTensor.cuda)
+
+If you're using MacOS, when downloading dependenices make sure you are on python3.12
+
+Run your virtual environment with that version
+
+```
+python3.12 -m venv venv
+```
+
